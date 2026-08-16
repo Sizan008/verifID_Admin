@@ -4,6 +4,7 @@ package com.leads.microcube.verifidadmin.parameterconfig.exception;
 public class ParameterConfigValidationException extends RuntimeException {
 
   public ParameterConfigValidationException(String message) {
+
     super(message);
   }
 }
