@@ -225,3 +225,11 @@ Caused by: oracle.jdbc.OracleDatabaseException: ORA-00942: table or view does no
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.2.9.jar:6.2.9]
 	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:138) ~[spring-tx-6.2.9.jar:6.2.9]
 	... 66 more
+[17:40:39.117] [restartedMain] [INFO ] c.l.m.v.ProviderApplication - Starting ProviderApplication using Java 21.0.11 with PID 94462 (/home/sizan/Desktop/VerifID_Admin/verifidadmin/verifidadmin-provider/target/classes started by sizan in /home/sizan/Desktop/VerifID_Admin/verifidadmin/verifidadmin-provider)
+[17:40:39.156] [restartedMain] [DEBUG] c.l.m.v.ProviderApplication - Running with Spring Boot v3.5.4, Spring v6.2.9
+[17:40:39.158] [restartedMain] [INFO ] c.l.m.v.ProviderApplication - No active profile set, falling back to 1 default profile: "default"
+[17:40:42.193] [restartedMain] [INFO ] c.l.m.v.ProviderApplication - Started ProviderApplication in 3.262 seconds (process running for 3.709)
+[17:42:29.298] [restartedMain] [INFO ] c.l.m.v.ProviderApplication - Starting ProviderApplication using Java 21.0.11 with PID 94926 (/home/sizan/Desktop/VerifID_Admin/verifidadmin/verifidadmin-provider/target/classes started by sizan in /home/sizan/Desktop/VerifID_Admin/verifidadmin/verifidadmin-provider)
+[17:42:29.338] [restartedMain] [DEBUG] c.l.m.v.ProviderApplication - Running with Spring Boot v3.5.4, Spring v6.2.9
+[17:42:29.339] [restartedMain] [INFO ] c.l.m.v.ProviderApplication - No active profile set, falling back to 1 default profile: "default"
+[17:42:32.220] [restartedMain] [INFO ] c.l.m.v.ProviderApplication - Started ProviderApplication in 3.098 seconds (process running for 3.524)

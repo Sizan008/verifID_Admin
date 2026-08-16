@@ -4,6 +4,7 @@ package com.leads.microcube.verifidadmin.parameterconfig.exception;
 public class ParameterConfigNotFoundException extends RuntimeException {
 
   public ParameterConfigNotFoundException(String key) {
+
     super("Parameter configuration not found: " + key);
   }
 }
