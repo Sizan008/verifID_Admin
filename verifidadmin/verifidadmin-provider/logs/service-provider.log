@@ -1,0 +1,3 @@
+[13:15:26.198] [restartedMain] [INFO ] c.l.m.v.ProviderApplication - Starting ProviderApplication using Java 21.0.11 with PID 48289 (/home/sizan/Desktop/VerifID_Admin/verifidadmin/verifidadmin-provider/target/classes started by sizan in /home/sizan/Desktop/VerifID_Admin/verifidadmin/verifidadmin-provider)
+[13:15:26.238] [restartedMain] [DEBUG] c.l.m.v.ProviderApplication - Running with Spring Boot v3.5.4, Spring v6.2.9
+[13:15:26.239] [restartedMain] [INFO ] c.l.m.v.ProviderApplication - No active profile set, falling back to 1 default profile: "default"
