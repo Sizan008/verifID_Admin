@@ -1,0 +1,10 @@
+com/leads/microcube/verifidadmin/parameterconfig/ParameterConfigQueryService.class
+com/leads/microcube/verifidadmin/parameterconfig/query/ParameterResponse$ParameterResponseBuilder.class
+com/leads/microcube/verifidadmin/parameterconfig/command/CreateParameter$CreateParameterBuilder.class
+com/leads/microcube/verifidadmin/parameterconfig/command/UpdateParameter$UpdateParameterBuilder.class
+com/leads/microcube/verifidadmin/parameterconfig/ParameterConfigService.class
+com/leads/microcube/verifidadmin/parameterconfig/command/CreateParameter.class
+com/leads/microcube/verifidadmin/parameterconfig/command/UpdateParameter.class
+com/leads/microcube/verifidadmin/parameterconfig/query/ParameterResponse.class
+com/leads/microcube/verifidadmin/common/response/ApiResponse.class
+com/leads/microcube/verifidadmin/parameterconfig/query/ParameterDetails.class

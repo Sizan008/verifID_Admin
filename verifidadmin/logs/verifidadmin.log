@@ -1,0 +1,3 @@
+[15:52:29.853] [main] [INFO ] c.l.m.v.ProviderApplication - Starting ProviderApplication v1.0-SNAPSHOT using Java 21.0.11 with PID 74961 (/home/sizan/Desktop/VerifID_Admin/verifidadmin/verifidadmin-provider/target/microcube.verifidadmin-provider-1.0-SNAPSHOT.jar started by sizan in /home/sizan/Desktop/VerifID_Admin/verifidadmin)
+[15:52:29.946] [main] [DEBUG] c.l.m.v.ProviderApplication - Running with Spring Boot v3.5.4, Spring v6.2.9
+[15:52:29.948] [main] [INFO ] c.l.m.v.ProviderApplication - No active profile set, falling back to 1 default profile: "default"
