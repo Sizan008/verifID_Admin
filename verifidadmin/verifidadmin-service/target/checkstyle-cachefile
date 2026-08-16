@@ -1,0 +1,4 @@
+#Sun Aug 16 13:15:04 BDT 2026
+configuration*?=6333ACDE5BDD413DEC28041807A38E3797080CCF
+module-resource*?\:checkstyle-suppressions.xml=2376667D7ECB6C74BB5FF8CFD605BF4BC8F6A37D
+module-resource*?\:checkstyle-xpath-suppressions.xml=76346BD07252D1D08ED78845F915AFA8040E9B7E

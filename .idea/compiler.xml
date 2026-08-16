@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="microcube.verifidadmin-service" />
+        <module name="microcube.verifidadmin-api" />
+        <module name="microcube.verifidadmin-provider" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="microcube.verifidadmin" options="-parameters" />
+      <module name="microcube.verifidadmin-api" options="-parameters" />
+      <module name="microcube.verifidadmin-provider" options="-parameters" />
+      <module name="microcube.verifidadmin-service" options="-parameters" />
+    </option>
+  </component>
+</project>
