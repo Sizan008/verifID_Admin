@@ -5,6 +5,8 @@ import com.leads.microcube.verifidadmin.apimanagement.command.UpdateApiConnectio
 import com.leads.microcube.verifidadmin.apimanagement.query.ApiConnectionDetails;
 import com.leads.microcube.verifidadmin.apimanagement.query.ApiConnectionResponse;
 import com.leads.microcube.verifidadmin.common.response.ApiResponse;
+import com.leads.microcube.verifidadmin.common.security.PermissionType;
+import com.leads.microcube.verifidadmin.common.security.RequirePermission;
 import jakarta.validation.Valid;
 import java.util.List;
 import lombok.RequiredArgsConstructor;
@@ -25,6 +27,7 @@ public class ApiManagementController {
   private final ApiManagementQueryService apiManagementQueryService;
 
   @GetMapping("/Index")
+  @RequirePermission(targetPath = "ApiManagement/Index")
   public ResponseEntity<ApiResponse<List<ApiConnectionResponse>>> retrieveApiConnections() {
     List<ApiConnectionResponse> connections =
         apiManagementQueryService.retrieveApiConnections();
@@ -32,11 +35,13 @@ public class ApiManagementController {
   }
 
   @GetMapping("/Create")
+  @RequirePermission(targetPath = "ApiManagement/Index", value = PermissionType.ADD)
   public ResponseEntity<ApiResponse<CreateApiConnection>> retrieveCreateForm() {
     return ResponseEntity.ok(ApiResponse.success(new CreateApiConnection()));
   }
 
   @PostMapping("/Create")
+  @RequirePermission(targetPath = "ApiManagement/Index", value = PermissionType.ADD)
   public ResponseEntity<ApiResponse<Void>> registerApiConnection(
       @Valid @RequestBody CreateApiConnection command) {
     apiManagementService.process(command);
@@ -45,6 +50,7 @@ public class ApiManagementController {
   }
 
   @GetMapping("/Edit/{id}")
+  @RequirePermission(targetPath = "ApiManagement/Index", value = PermissionType.EDIT)
   public ResponseEntity<ApiResponse<ApiConnectionResponse>> retrieveApiConnection(
       @PathVariable("id") Integer id) {
     ApiConnectionResponse connection =
@@ -53,6 +59,7 @@ public class ApiManagementController {
   }
 
   @PostMapping("/Edit")
+  @RequirePermission(targetPath = "ApiManagement/Index", value = PermissionType.EDIT)
   public ResponseEntity<ApiResponse<ApiConnectionResponse>> updateApiConnection(
       @Valid @RequestBody UpdateApiConnection command) {
     apiManagementService.process(command);
