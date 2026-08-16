@@ -1,6 +1,8 @@
 package com.leads.microcube.verifidadmin.parameterconfig;
 
 import com.leads.microcube.verifidadmin.common.response.ApiResponse;
+import com.leads.microcube.verifidadmin.common.security.PermissionType;
+import com.leads.microcube.verifidadmin.common.security.RequirePermission;
 import com.leads.microcube.verifidadmin.parameterconfig.command.CreateParameter;
 import com.leads.microcube.verifidadmin.parameterconfig.command.UpdateParameter;
 import com.leads.microcube.verifidadmin.parameterconfig.query.ParameterDetails;
@@ -26,17 +28,20 @@ public class ParameterConfigController {
   private final ParameterConfigQueryService parameterConfigQueryService;
 
   @GetMapping("/Index")
+  @RequirePermission(targetPath = "ParameterConfig/Index")
   public ResponseEntity<ApiResponse<List<ParameterResponse>>> retrieveParameters() {
     List<ParameterResponse> parameters = parameterConfigQueryService.retrieveParameters();
     return ResponseEntity.ok(ApiResponse.success(parameters));
   }
 
   @GetMapping("/Create")
+  @RequirePermission(targetPath = "ParameterConfig/Index", value = PermissionType.ADD)
   public ResponseEntity<ApiResponse<CreateParameter>> retrieveCreateForm() {
     return ResponseEntity.ok(ApiResponse.success(new CreateParameter()));
   }
 
   @PostMapping("/Create")
+  @RequirePermission(targetPath = "ParameterConfig/Index", value = PermissionType.ADD)
   public ResponseEntity<ApiResponse<ParameterResponse>> registerParameter(
           @Valid @RequestBody CreateParameter command) {
 
@@ -53,6 +58,7 @@ public class ParameterConfigController {
   }
 
   @GetMapping("/Edit/{id}")
+  @RequirePermission(targetPath = "ParameterConfig/Index", value = PermissionType.EDIT)
   public ResponseEntity<ApiResponse<ParameterResponse>> retrieveParameter(
       @PathVariable("id") String id) {
     ParameterResponse parameter =
@@ -61,6 +67,7 @@ public class ParameterConfigController {
   }
 
   @PostMapping("/Edit/{id}")
+  @RequirePermission(targetPath = "ParameterConfig/Index", value = PermissionType.EDIT)
   public ResponseEntity<ApiResponse<ParameterResponse>> updateParameter(
           @PathVariable("id") String id,
           @Valid @RequestBody UpdateParameter command) {

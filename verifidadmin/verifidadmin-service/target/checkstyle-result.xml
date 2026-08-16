@@ -16,19 +16,66 @@
 <file name="/home/sizan/Desktop/VerifID_Admin/verifidadmin/verifidadmin-service/src/main/java/com/leads/microcube/verifidadmin/parameterconfig/ParameterConfigQueryServiceImpl.java">
 </file>
 <file name="/home/sizan/Desktop/VerifID_Admin/verifidadmin/verifidadmin-service/src/main/java/com/leads/microcube/verifidadmin/parameterconfig/ParameterConfigController.java">
-<error line="39" column="3" severity="warning" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
-<error line="55" column="3" severity="warning" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
-<error line="63" column="3" severity="warning" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
+<error line="43" column="3" severity="warning" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
+<error line="60" column="3" severity="warning" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
+<error line="69" column="3" severity="warning" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
 </file>
 <file name="/home/sizan/Desktop/VerifID_Admin/verifidadmin/verifidadmin-service/src/main/java/com/leads/microcube/verifidadmin/parameterconfig/ParameterConfigMapper.java">
 <error line="13" column="3" severity="warning" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
 </file>
-<file name="/home/sizan/Desktop/VerifID_Admin/verifidadmin/verifidadmin-service/src/main/java/com/leads/microcube/verifidadmin/apimanagement/ApiManagementController.java">
-<error line="19" column="1" severity="warning" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocTypeCheck"/>
+<file name="/home/sizan/Desktop/VerifID_Admin/verifidadmin/verifidadmin-service/src/main/java/com/leads/microcube/verifidadmin/common/exception/GlobalExceptionHandler.java">
+<error line="16" column="1" severity="warning" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocTypeCheck"/>
+<error line="46" column="3" severity="warning" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
+</file>
+<file name="/home/sizan/Desktop/VerifID_Admin/verifidadmin/verifidadmin-service/src/main/java/com/leads/microcube/verifidadmin/common/security/SessionCurrentUserProvider.java">
+<error line="9" column="1" severity="warning" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocTypeCheck"/>
+</file>
+<file name="/home/sizan/Desktop/VerifID_Admin/verifidadmin/verifidadmin-service/src/main/java/com/leads/microcube/verifidadmin/common/security/SecurityExceptionHandler.java">
+<error line="10" column="1" severity="warning" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocTypeCheck"/>
+</file>
+<file name="/home/sizan/Desktop/VerifID_Admin/verifidadmin/verifidadmin-service/src/main/java/com/leads/microcube/verifidadmin/common/security/FeatureAccessDeniedException.java">
+<error line="3" column="1" severity="warning" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocTypeCheck"/>
+</file>
+<file name="/home/sizan/Desktop/VerifID_Admin/verifidadmin/verifidadmin-service/src/main/java/com/leads/microcube/verifidadmin/common/security/SecurityConfig.java">
+<error line="15" column="1" severity="warning" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocTypeCheck"/>
 <error line="27" column="3" severity="warning" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
-<error line="39" column="3" severity="warning" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
-<error line="47" column="3" severity="warning" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
-<error line="55" column="3" severity="warning" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
+</file>
+<file name="/home/sizan/Desktop/VerifID_Admin/verifidadmin/verifidadmin-service/src/main/java/com/leads/microcube/verifidadmin/common/security/FeaturePermissionInterceptor.java">
+<error line="14" column="1" severity="warning" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocTypeCheck"/>
+<error line="32" column="5" severity="warning" message="Distance between variable &apos;currentUser&apos; declaration and its first usage is 4, but allowed 3.  Consider making that variable final if you still need to store its value in advance (before method calls that might have side effects on the original value)." source="com.puppycrawl.tools.checkstyle.checks.coding.VariableDeclarationUsageDistanceCheck"/>
+<error line="77" column="9" severity="warning" message="&apos;switch&apos; has incorrect indentation level 8, expected level should be 4." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="78" column="11" severity="warning" message="&apos;case&apos; child has incorrect indentation level 10, expected level should be 6." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="79" column="11" severity="warning" message="&apos;case&apos; child has incorrect indentation level 10, expected level should be 6." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="80" column="11" severity="warning" message="&apos;case&apos; child has incorrect indentation level 10, expected level should be 6." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="81" column="11" severity="warning" message="&apos;case&apos; child has incorrect indentation level 10, expected level should be 6." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="82" column="11" severity="warning" message="&apos;case&apos; child has incorrect indentation level 10, expected level should be 6." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="83" column="11" severity="warning" message="&apos;case&apos; child has incorrect indentation level 10, expected level should be 6." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="84" column="11" severity="warning" message="&apos;case&apos; child has incorrect indentation level 10, expected level should be 6." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="85" column="11" severity="warning" message="&apos;case&apos; child has incorrect indentation level 10, expected level should be 6." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="86" column="11" severity="warning" message="&apos;case&apos; child has incorrect indentation level 10, expected level should be 6." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="87" column="9" severity="warning" message="&apos;switch rcurly&apos; has incorrect indentation level 8, expected level should be 4." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+</file>
+<file name="/home/sizan/Desktop/VerifID_Admin/verifidadmin/verifidadmin-service/src/main/java/com/leads/microcube/verifidadmin/common/security/RestAuthenticationEntryPoint.java">
+<error line="14" column="1" severity="warning" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocTypeCheck"/>
+</file>
+<file name="/home/sizan/Desktop/VerifID_Admin/verifidadmin/verifidadmin-service/src/main/java/com/leads/microcube/verifidadmin/common/security/RestAccessDeniedHandler.java">
+<error line="14" column="1" severity="warning" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocTypeCheck"/>
+</file>
+<file name="/home/sizan/Desktop/VerifID_Admin/verifidadmin/verifidadmin-service/src/main/java/com/leads/microcube/verifidadmin/common/security/UnauthenticatedException.java">
+<error line="3" column="1" severity="warning" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocTypeCheck"/>
+</file>
+<file name="/home/sizan/Desktop/VerifID_Admin/verifidadmin/verifidadmin-service/src/main/java/com/leads/microcube/verifidadmin/common/security/SessionAuthenticationFilter.java">
+<error line="15" column="1" severity="warning" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocTypeCheck"/>
+</file>
+<file name="/home/sizan/Desktop/VerifID_Admin/verifidadmin/verifidadmin-service/src/main/java/com/leads/microcube/verifidadmin/common/security/SecurityWebConfig.java">
+<error line="8" column="1" severity="warning" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocTypeCheck"/>
+</file>
+<file name="/home/sizan/Desktop/VerifID_Admin/verifidadmin/verifidadmin-service/src/main/java/com/leads/microcube/verifidadmin/apimanagement/ApiManagementController.java">
+<error line="21" column="1" severity="warning" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocTypeCheck"/>
+<error line="29" column="3" severity="warning" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
+<error line="43" column="3" severity="warning" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
+<error line="52" column="3" severity="warning" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
+<error line="61" column="3" severity="warning" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
 </file>
 <file name="/home/sizan/Desktop/VerifID_Admin/verifidadmin/verifidadmin-service/src/main/java/com/leads/microcube/verifidadmin/apimanagement/ApiManagementMapper.java">
 <error line="7" column="1" severity="warning" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocTypeCheck"/>
