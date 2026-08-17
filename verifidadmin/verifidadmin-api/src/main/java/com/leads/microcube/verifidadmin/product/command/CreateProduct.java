@@ -62,7 +62,7 @@ public class CreateProduct {
   @JsonProperty("Gender")
   private String gender;
 
-  @Size(max = 100)
+  @Size(max = 5)
   @JsonProperty("Profession")
   private String profession;
 
