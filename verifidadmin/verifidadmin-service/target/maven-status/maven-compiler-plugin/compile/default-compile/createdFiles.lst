@@ -1,9 +1,14 @@
+com/leads/microcube/verifidadmin/log/LogController.class
 com/leads/microcube/verifidadmin/common/security/RestAuthenticationEntryPoint.class
 com/leads/microcube/verifidadmin/common/security/FeaturePermissionInterceptor.class
 com/leads/microcube/verifidadmin/apimanagement/exception/ApiManagementExceptionHandler.class
+com/leads/microcube/verifidadmin/log/repository/UserActivityLogEntity.class
 com/leads/microcube/verifidadmin/common/security/RestAccessDeniedHandler.class
 com/leads/microcube/verifidadmin/apimanagement/exception/ApiManagementValidationException.class
+com/leads/microcube/verifidadmin/log/UserActivityLogServiceImpl.class
 com/leads/microcube/verifidadmin/apimanagement/ApiManagementController.class
+com/leads/microcube/verifidadmin/log/UserActivityLogMapper.class
+com/leads/microcube/verifidadmin/log/UserActivityLogQueryServiceImpl.class
 com/leads/microcube/verifidadmin/apimanagement/repository/ApiConnectionRepository.class
 com/leads/microcube/verifidadmin/apimanagement/repository/ApiConnectionEntity$ApiConnectionEntityBuilder.class
 com/leads/microcube/verifidadmin/parameterconfig/exception/ParameterConfigExceptionHandler.class
@@ -12,6 +17,7 @@ com/leads/microcube/verifidadmin/apimanagement/ApiManagementQueryServiceImpl.cla
 com/leads/microcube/verifidadmin/common/security/SessionCurrentUserProvider.class
 com/leads/microcube/verifidadmin/parameterconfig/ParameterConfigController.class
 com/leads/microcube/verifidadmin/common/security/FeaturePermissionInterceptor$1.class
+com/leads/microcube/verifidadmin/log/repository/UserActivityLogEntity$UserActivityLogEntityBuilder.class
 com/leads/microcube/verifidadmin/common/security/SecurityExceptionHandler.class
 com/leads/microcube/verifidadmin/parameterconfig/exception/ParameterConfigValidationException.class
 com/leads/microcube/verifidadmin/parameterconfig/exception/ParameterConfigNotFoundException.class
@@ -27,6 +33,8 @@ com/leads/microcube/verifidadmin/parameterconfig/ParameterConfigMapper.class
 com/leads/microcube/verifidadmin/apimanagement/exception/ApiManagementNotFoundException.class
 com/leads/microcube/verifidadmin/common/security/SecurityConfig.class
 com/leads/microcube/verifidadmin/common/security/SecurityWebConfig.class
+com/leads/microcube/verifidadmin/log/UserActivityLogExcelGenerator.class
 com/leads/microcube/verifidadmin/parameterconfig/ParameterConfigQueryServiceImpl.class
+com/leads/microcube/verifidadmin/log/repository/UserActivityLogRepository.class
 com/leads/microcube/verifidadmin/common/security/UnauthenticatedException.class
 com/leads/microcube/verifidadmin/apimanagement/ApiManagementServiceImpl.class
