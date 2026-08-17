@@ -7,6 +7,8 @@ import com.leads.microcube.verifidadmin.apimanagement.query.ApiConnectionRespons
 import com.leads.microcube.verifidadmin.common.response.ApiResponse;
 import com.leads.microcube.verifidadmin.common.security.PermissionType;
 import com.leads.microcube.verifidadmin.common.security.RequirePermission;
+import com.leads.microcube.verifidadmin.log.UserActivityLogService;
+import com.leads.microcube.verifidadmin.log.command.RecordCurrentUserActivity;
 import jakarta.validation.Valid;
 import java.util.List;
 import lombok.RequiredArgsConstructor;
@@ -25,6 +27,7 @@ public class ApiManagementController {
 
   private final ApiManagementService apiManagementService;
   private final ApiManagementQueryService apiManagementQueryService;
+  private final UserActivityLogService userActivityLogService;
 
   @GetMapping("/Index")
   @RequirePermission(targetPath = "ApiManagement/Index")
@@ -45,6 +48,14 @@ public class ApiManagementController {
   public ResponseEntity<ApiResponse<Void>> registerApiConnection(
       @Valid @RequestBody CreateApiConnection command) {
     apiManagementService.process(command);
+    userActivityLogService.process(
+        RecordCurrentUserActivity.builder()
+            .trackingNo(0L)
+            .stepId(0)
+            .actionType("Create")
+            .actionParticulars("is Create API Connection")
+            .requestChannel("")
+            .build());
     return ResponseEntity.ok(
         ApiResponse.success("API connection created successfully.", null));
   }
@@ -63,6 +74,14 @@ public class ApiManagementController {
   public ResponseEntity<ApiResponse<ApiConnectionResponse>> updateApiConnection(
       @Valid @RequestBody UpdateApiConnection command) {
     apiManagementService.process(command);
+    userActivityLogService.process(
+        RecordCurrentUserActivity.builder()
+            .trackingNo(0L)
+            .stepId(0)
+            .actionType("Edit")
+            .actionParticulars("is Edit API Connection")
+            .requestChannel("")
+            .build());
     ApiConnectionResponse connection =
         apiManagementQueryService.retrieveApiConnection(
             new ApiConnectionDetails(command.getApiConnId()));
