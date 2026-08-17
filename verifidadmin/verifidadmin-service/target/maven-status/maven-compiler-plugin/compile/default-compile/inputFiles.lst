@@ -43,3 +43,15 @@
 /home/sizan/Desktop/VerifID_Admin/verifidadmin/verifidadmin-service/src/main/java/com/leads/microcube/verifidadmin/parameterconfig/exception/ParameterConfigValidationException.java
 /home/sizan/Desktop/VerifID_Admin/verifidadmin/verifidadmin-service/src/main/java/com/leads/microcube/verifidadmin/parameterconfig/repository/AppSettingEntity.java
 /home/sizan/Desktop/VerifID_Admin/verifidadmin/verifidadmin-service/src/main/java/com/leads/microcube/verifidadmin/parameterconfig/repository/AppSettingRepository.java
+/home/sizan/Desktop/VerifID_Admin/verifidadmin/verifidadmin-service/src/main/java/com/leads/microcube/verifidadmin/product/ProductController.java
+/home/sizan/Desktop/VerifID_Admin/verifidadmin/verifidadmin-service/src/main/java/com/leads/microcube/verifidadmin/product/ProductMapper.java
+/home/sizan/Desktop/VerifID_Admin/verifidadmin/verifidadmin-service/src/main/java/com/leads/microcube/verifidadmin/product/ProductQueryServiceImpl.java
+/home/sizan/Desktop/VerifID_Admin/verifidadmin/verifidadmin-service/src/main/java/com/leads/microcube/verifidadmin/product/ProductServiceImpl.java
+/home/sizan/Desktop/VerifID_Admin/verifidadmin/verifidadmin-service/src/main/java/com/leads/microcube/verifidadmin/product/exception/ProductExceptionHandler.java
+/home/sizan/Desktop/VerifID_Admin/verifidadmin/verifidadmin-service/src/main/java/com/leads/microcube/verifidadmin/product/exception/ProductNotFoundException.java
+/home/sizan/Desktop/VerifID_Admin/verifidadmin/verifidadmin-service/src/main/java/com/leads/microcube/verifidadmin/product/exception/ProductValidationException.java
+/home/sizan/Desktop/VerifID_Admin/verifidadmin/verifidadmin-service/src/main/java/com/leads/microcube/verifidadmin/product/repository/ChannelProductEntity.java
+/home/sizan/Desktop/VerifID_Admin/verifidadmin/verifidadmin-service/src/main/java/com/leads/microcube/verifidadmin/product/repository/ChannelProductId.java
+/home/sizan/Desktop/VerifID_Admin/verifidadmin/verifidadmin-service/src/main/java/com/leads/microcube/verifidadmin/product/repository/ChannelProductRepository.java
+/home/sizan/Desktop/VerifID_Admin/verifidadmin/verifidadmin-service/src/main/java/com/leads/microcube/verifidadmin/product/repository/ProductEntity.java
+/home/sizan/Desktop/VerifID_Admin/verifidadmin/verifidadmin-service/src/main/java/com/leads/microcube/verifidadmin/product/repository/ProductRepository.java

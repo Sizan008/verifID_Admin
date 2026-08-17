@@ -31,3 +31,14 @@
 /home/sizan/Desktop/VerifID_Admin/verifidadmin/verifidadmin-api/src/main/java/com/leads/microcube/verifidadmin/parameterconfig/command/UpdateParameter.java
 /home/sizan/Desktop/VerifID_Admin/verifidadmin/verifidadmin-api/src/main/java/com/leads/microcube/verifidadmin/parameterconfig/query/ParameterDetails.java
 /home/sizan/Desktop/VerifID_Admin/verifidadmin/verifidadmin-api/src/main/java/com/leads/microcube/verifidadmin/parameterconfig/query/ParameterResponse.java
+/home/sizan/Desktop/VerifID_Admin/verifidadmin/verifidadmin-api/src/main/java/com/leads/microcube/verifidadmin/product/ProductQueryService.java
+/home/sizan/Desktop/VerifID_Admin/verifidadmin/verifidadmin-api/src/main/java/com/leads/microcube/verifidadmin/product/ProductService.java
+/home/sizan/Desktop/VerifID_Admin/verifidadmin/verifidadmin-api/src/main/java/com/leads/microcube/verifidadmin/product/command/AssignProduct.java
+/home/sizan/Desktop/VerifID_Admin/verifidadmin/verifidadmin-api/src/main/java/com/leads/microcube/verifidadmin/product/command/CreateProduct.java
+/home/sizan/Desktop/VerifID_Admin/verifidadmin/verifidadmin-api/src/main/java/com/leads/microcube/verifidadmin/product/command/DeleteProduct.java
+/home/sizan/Desktop/VerifID_Admin/verifidadmin/verifidadmin-api/src/main/java/com/leads/microcube/verifidadmin/product/query/AvailableProductResponse.java
+/home/sizan/Desktop/VerifID_Admin/verifidadmin/verifidadmin-api/src/main/java/com/leads/microcube/verifidadmin/product/query/AvailableProducts.java
+/home/sizan/Desktop/VerifID_Admin/verifidadmin/verifidadmin-api/src/main/java/com/leads/microcube/verifidadmin/product/query/AvailableProductsResponse.java
+/home/sizan/Desktop/VerifID_Admin/verifidadmin/verifidadmin-api/src/main/java/com/leads/microcube/verifidadmin/product/query/ChannelProductResponse.java
+/home/sizan/Desktop/VerifID_Admin/verifidadmin/verifidadmin-api/src/main/java/com/leads/microcube/verifidadmin/product/query/ChannelProducts.java
+/home/sizan/Desktop/VerifID_Admin/verifidadmin/verifidadmin-api/src/main/java/com/leads/microcube/verifidadmin/product/query/ProductResponse.java
