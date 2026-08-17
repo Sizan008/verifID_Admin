@@ -2077,3 +2077,7 @@ org.springframework.web.servlet.resource.NoResourceFoundException: No static res
 [11:31:35.809] [restartedMain] [DEBUG] c.l.m.v.ProviderApplication - Running with Spring Boot v3.5.4, Spring v6.2.9
 [11:31:35.811] [restartedMain] [INFO ] c.l.m.v.ProviderApplication - No active profile set, falling back to 1 default profile: "default"
 [11:31:39.764] [restartedMain] [INFO ] c.l.m.v.ProviderApplication - Started ProviderApplication in 4.231 seconds (process running for 4.78)
+[12:07:26.313] [restartedMain] [INFO ] c.l.m.v.ProviderApplication - Starting ProviderApplication using Java 21.0.11 with PID 43359 (/home/sizan/Desktop/VerifID_Admin/verifidadmin/verifidadmin-provider/target/classes started by sizan in /home/sizan/Desktop/VerifID_Admin/verifidadmin/verifidadmin-provider)
+[12:07:26.356] [restartedMain] [DEBUG] c.l.m.v.ProviderApplication - Running with Spring Boot v3.5.4, Spring v6.2.9
+[12:07:26.358] [restartedMain] [INFO ] c.l.m.v.ProviderApplication - No active profile set, falling back to 1 default profile: "default"
+[12:07:29.704] [restartedMain] [INFO ] c.l.m.v.ProviderApplication - Started ProviderApplication in 3.582 seconds (process running for 4.054)

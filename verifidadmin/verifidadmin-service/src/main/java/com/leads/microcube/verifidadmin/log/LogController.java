@@ -6,9 +6,7 @@ import com.leads.microcube.verifidadmin.common.security.RequirePermission;
 import com.leads.microcube.verifidadmin.log.query.UserActivityLogExportResponse;
 import com.leads.microcube.verifidadmin.log.query.UserActivityLogFilter;
 import com.leads.microcube.verifidadmin.log.query.UserActivityLogPageResponse;
-import com.leads.microcube.verifidadmin.log.query.UserActivityLogResponse;
 import java.time.LocalDate;
-import java.util.List;
 import lombok.RequiredArgsConstructor;
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.http.ResponseEntity;
@@ -29,7 +27,6 @@ public class LogController {
     public ResponseEntity<ApiResponse<UserActivityLogPageResponse>>
     retrieveUserActivities(
             @RequestParam(name = "pageNumber", defaultValue = "1") int pageNumber) {
-
         UserActivityLogFilter filter =
                 UserActivityLogFilter.builder()
                         .pageNumber(pageNumber)

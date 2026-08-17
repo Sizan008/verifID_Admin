@@ -8,7 +8,6 @@ import java.util.List;
 
 public interface UserActivityLogQueryService {
 
-  List<UserActivityLogResponse> retrieveUserActivities();
 
   UserActivityLogPageResponse retrieveUserActivities(UserActivityLogFilter filter);
 

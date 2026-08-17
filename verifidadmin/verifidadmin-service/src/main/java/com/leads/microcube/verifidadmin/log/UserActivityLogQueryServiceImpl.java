@@ -24,7 +24,7 @@ import org.springframework.util.StringUtils;
 @Transactional(readOnly = true)
 public class UserActivityLogQueryServiceImpl implements UserActivityLogQueryService {
 
-  private static final int MAXIMUM_INDEX_RESULT_SIZE = 100000;
+//  private static final int MAXIMUM_INDEX_RESULT_SIZE = 100000;
   private static final int DEFAULT_PAGE_SIZE = 8;
   private static final Sort ACTION_DATE_DESCENDING =
       Sort.by(Sort.Direction.DESC, "actionDate");
@@ -32,15 +32,6 @@ public class UserActivityLogQueryServiceImpl implements UserActivityLogQueryServ
   private final UserActivityLogRepository userActivityLogRepository;
   private final UserActivityLogMapper userActivityLogMapper;
   private final UserActivityLogExcelGenerator userActivityLogExcelGenerator;
-
-  @Override
-  public List<UserActivityLogResponse> retrieveUserActivities() {
-    PageRequest request =
-        PageRequest.of(0, MAXIMUM_INDEX_RESULT_SIZE, ACTION_DATE_DESCENDING);
-    return userActivityLogRepository.findAll(request).stream()
-        .map(userActivityLogMapper::toResponse)
-        .toList();
-  }
 
   @Override
   public UserActivityLogPageResponse retrieveUserActivities(UserActivityLogFilter filter) {
