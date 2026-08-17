@@ -43,6 +43,6 @@ public class UserActivityLogEntity {
   @Column(name = "ACTION_TERMINAL_IP", nullable = false, length = 100)
   private String actionTerminalIp;
 
-  @Column(name = "USER_ID")
+  @Column(name = "USER_ID", length = 100)
   private String userId;
 }

@@ -4,6 +4,13 @@
 /home/sizan/Desktop/VerifID_Admin/verifidadmin/verifidadmin-api/src/main/java/com/leads/microcube/verifidadmin/apimanagement/command/UpdateApiConnection.java
 /home/sizan/Desktop/VerifID_Admin/verifidadmin/verifidadmin-api/src/main/java/com/leads/microcube/verifidadmin/apimanagement/query/ApiConnectionDetails.java
 /home/sizan/Desktop/VerifID_Admin/verifidadmin/verifidadmin-api/src/main/java/com/leads/microcube/verifidadmin/apimanagement/query/ApiConnectionResponse.java
+/home/sizan/Desktop/VerifID_Admin/verifidadmin/verifidadmin-api/src/main/java/com/leads/microcube/verifidadmin/channel/ChannelQueryService.java
+/home/sizan/Desktop/VerifID_Admin/verifidadmin/verifidadmin-api/src/main/java/com/leads/microcube/verifidadmin/channel/ChannelService.java
+/home/sizan/Desktop/VerifID_Admin/verifidadmin/verifidadmin-api/src/main/java/com/leads/microcube/verifidadmin/channel/command/CreateChannel.java
+/home/sizan/Desktop/VerifID_Admin/verifidadmin/verifidadmin-api/src/main/java/com/leads/microcube/verifidadmin/channel/command/UpdateChannel.java
+/home/sizan/Desktop/VerifID_Admin/verifidadmin/verifidadmin-api/src/main/java/com/leads/microcube/verifidadmin/channel/query/ChannelDetails.java
+/home/sizan/Desktop/VerifID_Admin/verifidadmin/verifidadmin-api/src/main/java/com/leads/microcube/verifidadmin/channel/query/ChannelResponse.java
+/home/sizan/Desktop/VerifID_Admin/verifidadmin/verifidadmin-api/src/main/java/com/leads/microcube/verifidadmin/channel/query/ChannelSummaryResponse.java
 /home/sizan/Desktop/VerifID_Admin/verifidadmin/verifidadmin-api/src/main/java/com/leads/microcube/verifidadmin/common/response/ApiResponse.java
 /home/sizan/Desktop/VerifID_Admin/verifidadmin/verifidadmin-api/src/main/java/com/leads/microcube/verifidadmin/common/security/CurrentUser.java
 /home/sizan/Desktop/VerifID_Admin/verifidadmin/verifidadmin-api/src/main/java/com/leads/microcube/verifidadmin/common/security/CurrentUserProvider.java

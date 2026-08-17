@@ -10,6 +10,7 @@
 </file>
 <file name="/home/sizan/Desktop/VerifID_Admin/verifidadmin/verifidadmin-service/src/main/java/com/leads/microcube/verifidadmin/log/UserActivityLogQueryServiceImpl.java">
 <error line="22" column="1" severity="warning" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocTypeCheck"/>
+<error line="27" column="1" severity="warning" message="Comment has incorrect indentation level 0, expected is 2, indentation should be the same level as line 28." source="com.puppycrawl.tools.checkstyle.checks.indentation.CommentsIndentationCheck"/>
 </file>
 <file name="/home/sizan/Desktop/VerifID_Admin/verifidadmin/verifidadmin-service/src/main/java/com/leads/microcube/verifidadmin/log/repository/UserActivityLogRepository.java">
 <error line="7" column="1" severity="warning" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocTypeCheck"/>
@@ -22,17 +23,51 @@
 <error line="36" column="3" severity="warning" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
 </file>
 <file name="/home/sizan/Desktop/VerifID_Admin/verifidadmin/verifidadmin-service/src/main/java/com/leads/microcube/verifidadmin/log/LogController.java">
-<error line="20" column="1" severity="warning" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocTypeCheck"/>
-<error line="27" column="5" severity="warning" message="&apos;method def modifier&apos; has incorrect indentation level 4, expected level should be 2." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="27" column="5" severity="warning" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
-<error line="30" column="5" severity="warning" message="&apos;retrieveUserActivities&apos; has incorrect indentation level 4, expected level should be 8." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="33" column="9" severity="warning" message="&apos;method def&apos; child has incorrect indentation level 8, expected level should be 4." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="18" column="1" severity="warning" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocTypeCheck"/>
+<error line="25" column="5" severity="warning" message="&apos;method def modifier&apos; has incorrect indentation level 4, expected level should be 2." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="25" column="5" severity="warning" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
+<error line="28" column="5" severity="warning" message="&apos;retrieveUserActivities&apos; has incorrect indentation level 4, expected level should be 8." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="30" column="9" severity="warning" message="&apos;method def&apos; child has incorrect indentation level 8, expected level should be 4." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="36" column="9" severity="warning" message="&apos;method def&apos; child has incorrect indentation level 8, expected level should be 4." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
 <error line="39" column="9" severity="warning" message="&apos;method def&apos; child has incorrect indentation level 8, expected level should be 4." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="42" column="9" severity="warning" message="&apos;method def&apos; child has incorrect indentation level 8, expected level should be 4." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="43" column="5" severity="warning" message="&apos;method def rcurly&apos; has incorrect indentation level 4, expected level should be 2." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
-<error line="45" column="3" severity="warning" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
+<error line="40" column="5" severity="warning" message="&apos;method def rcurly&apos; has incorrect indentation level 4, expected level should be 2." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="42" column="3" severity="warning" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
+<error line="53" column="3" severity="warning" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
+<error line="83" column="3" severity="warning" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
+</file>
+<file name="/home/sizan/Desktop/VerifID_Admin/verifidadmin/verifidadmin-service/src/main/java/com/leads/microcube/verifidadmin/channel/ChannelServiceImpl.java">
+<error line="16" column="1" severity="warning" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocTypeCheck"/>
+</file>
+<file name="/home/sizan/Desktop/VerifID_Admin/verifidadmin/verifidadmin-service/src/main/java/com/leads/microcube/verifidadmin/channel/ChannelMapper.java">
+<error line="8" column="1" severity="warning" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocTypeCheck"/>
+<error line="11" column="3" severity="warning" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
+<error line="18" column="3" severity="warning" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
+</file>
+<file name="/home/sizan/Desktop/VerifID_Admin/verifidadmin/verifidadmin-service/src/main/java/com/leads/microcube/verifidadmin/channel/ChannelQueryServiceImpl.java">
+<error line="16" column="1" severity="warning" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocTypeCheck"/>
+</file>
+<file name="/home/sizan/Desktop/VerifID_Admin/verifidadmin/verifidadmin-service/src/main/java/com/leads/microcube/verifidadmin/channel/exception/ChannelExceptionHandler.java">
+<error line="12" column="1" severity="warning" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocTypeCheck"/>
+<error line="26" column="3" severity="warning" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
+</file>
+<file name="/home/sizan/Desktop/VerifID_Admin/verifidadmin/verifidadmin-service/src/main/java/com/leads/microcube/verifidadmin/channel/exception/ChannelNotFoundException.java">
+<error line="3" column="1" severity="warning" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocTypeCheck"/>
+</file>
+<file name="/home/sizan/Desktop/VerifID_Admin/verifidadmin/verifidadmin-service/src/main/java/com/leads/microcube/verifidadmin/channel/exception/ChannelValidationException.java">
+<error line="3" column="1" severity="warning" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocTypeCheck"/>
+</file>
+<file name="/home/sizan/Desktop/VerifID_Admin/verifidadmin/verifidadmin-service/src/main/java/com/leads/microcube/verifidadmin/channel/repository/ChannelEntity.java">
+<error line="15" column="1" severity="warning" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocTypeCheck"/>
+</file>
+<file name="/home/sizan/Desktop/VerifID_Admin/verifidadmin/verifidadmin-service/src/main/java/com/leads/microcube/verifidadmin/channel/repository/ChannelRepository.java">
+<error line="8" column="1" severity="warning" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocTypeCheck"/>
+</file>
+<file name="/home/sizan/Desktop/VerifID_Admin/verifidadmin/verifidadmin-service/src/main/java/com/leads/microcube/verifidadmin/channel/ChannelController.java">
+<error line="25" column="1" severity="warning" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocTypeCheck"/>
+<error line="41" column="3" severity="warning" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
 <error line="56" column="3" severity="warning" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
-<error line="86" column="3" severity="warning" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
+<error line="72" column="3" severity="warning" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
+<error line="81" column="3" severity="warning" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
 </file>
 <file name="/home/sizan/Desktop/VerifID_Admin/verifidadmin/verifidadmin-service/src/main/java/com/leads/microcube/verifidadmin/parameterconfig/ParameterConfigServiceImpl.java">
 </file>
