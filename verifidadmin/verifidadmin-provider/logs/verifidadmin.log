@@ -2081,3 +2081,11 @@ org.springframework.web.servlet.resource.NoResourceFoundException: No static res
 [12:07:26.356] [restartedMain] [DEBUG] c.l.m.v.ProviderApplication - Running with Spring Boot v3.5.4, Spring v6.2.9
 [12:07:26.358] [restartedMain] [INFO ] c.l.m.v.ProviderApplication - No active profile set, falling back to 1 default profile: "default"
 [12:07:29.704] [restartedMain] [INFO ] c.l.m.v.ProviderApplication - Started ProviderApplication in 3.582 seconds (process running for 4.054)
+[12:41:24.348] [restartedMain] [INFO ] c.l.m.v.ProviderApplication - Starting ProviderApplication using Java 21.0.11 with PID 50733 (/home/sizan/Desktop/VerifID_Admin/verifidadmin/verifidadmin-provider/target/classes started by sizan in /home/sizan/Desktop/VerifID_Admin/verifidadmin/verifidadmin-provider)
+[12:41:24.392] [restartedMain] [DEBUG] c.l.m.v.ProviderApplication - Running with Spring Boot v3.5.4, Spring v6.2.9
+[12:41:24.393] [restartedMain] [INFO ] c.l.m.v.ProviderApplication - No active profile set, falling back to 1 default profile: "default"
+[12:41:28.017] [restartedMain] [INFO ] c.l.m.v.ProviderApplication - Started ProviderApplication in 3.879 seconds (process running for 4.338)
+[13:03:59.608] [restartedMain] [INFO ] c.l.m.v.ProviderApplication - Starting ProviderApplication using Java 21.0.11 with PID 55673 (/home/sizan/Desktop/VerifID_Admin/verifidadmin/verifidadmin-provider/target/classes started by sizan in /home/sizan/Desktop/VerifID_Admin/verifidadmin/verifidadmin-provider)
+[13:03:59.650] [restartedMain] [DEBUG] c.l.m.v.ProviderApplication - Running with Spring Boot v3.5.4, Spring v6.2.9
+[13:03:59.651] [restartedMain] [INFO ] c.l.m.v.ProviderApplication - No active profile set, falling back to 1 default profile: "default"
+[13:04:03.259] [restartedMain] [INFO ] c.l.m.v.ProviderApplication - Started ProviderApplication in 3.855 seconds (process running for 4.343)
