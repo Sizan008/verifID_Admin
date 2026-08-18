@@ -7,6 +7,11 @@
       <option name="url" value="http://192.168.10.64:8081/repository/maven-public/" />
     </remote-repository>
     <remote-repository>
+      <option name="id" value="com.e-iceblue" />
+      <option name="name" value="e-iceblue" />
+      <option name="url" value="http://192.168.10.64:8081/repository/maven-public/" />
+    </remote-repository>
+    <remote-repository>
       <option name="id" value="nexus" />
       <option name="name" value="nexus" />
       <option name="url" value="http://192.168.10.64:8081/repository/maven-public/" />

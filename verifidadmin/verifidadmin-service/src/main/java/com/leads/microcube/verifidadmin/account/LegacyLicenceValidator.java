@@ -78,10 +78,14 @@ public class LegacyLicenceValidator {
       return;
     }
     String encryptedDate = accountSettings.retrieveRequiredSetting("LICENCE_DATE");
-    LocalDate licenceDate = parseDate(decrypt(encryptedDate));
+    LocalDate licenceDate = decodeLicenceDate(encryptedDate);
     if (LocalDate.now().isAfter(licenceDate)) {
       throw new AccountValidationException("Licence Expired !!!");
     }
+  }
+
+  public LocalDate decodeLicenceDate(String encryptedDate) {
+    return parseDate(decrypt(encryptedDate));
   }
 
   private String decrypt(String encryptedText) {

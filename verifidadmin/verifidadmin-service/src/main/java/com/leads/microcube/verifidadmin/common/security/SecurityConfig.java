@@ -51,6 +51,7 @@ public class SecurityConfig {
                       "/api/Account/Login",
                       "/api/Account/Validate",
                       "/api/Account/ValidateCentralLogin",
+                      "/api/Error/**",
                       "/swagger-ui.html",
                       "/swagger-ui/**",
                       "/v3/api-docs/**",

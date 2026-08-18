@@ -73,9 +73,12 @@ public class FeaturePermissionInterceptor implements HandlerInterceptor {
   }
 
   private boolean isAllowed(FunctionAccess access, PermissionType permissionType) {
+    if (permissionType == PermissionType.VIEW) {
+      return true;
+    }
     Integer flag =
         switch (permissionType) {
-          case VIEW -> access.getAllowViewFlag();
+          case VIEW -> 0;
           case ADD -> access.getAllowAddFlag();
           case EDIT -> access.getAllowEditFlag();
           case DELETE -> access.getAllowDeleteFlag();
