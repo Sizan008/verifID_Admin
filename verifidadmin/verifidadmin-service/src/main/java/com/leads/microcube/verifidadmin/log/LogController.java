@@ -1,8 +1,6 @@
 package com.leads.microcube.verifidadmin.log;
 
 import com.leads.microcube.verifidadmin.common.response.ApiResponse;
-import com.leads.microcube.verifidadmin.common.security.PermissionType;
-import com.leads.microcube.verifidadmin.common.security.RequirePermission;
 import com.leads.microcube.verifidadmin.log.query.UserActivityLogExportResponse;
 import com.leads.microcube.verifidadmin.log.query.UserActivityLogFilter;
 import com.leads.microcube.verifidadmin.log.query.UserActivityLogPageResponse;
@@ -22,25 +20,17 @@ public class LogController {
 
   private final UserActivityLogQueryService userActivityLogQueryService;
 
-    @GetMapping("/Index")
-    @RequirePermission(targetPath = "Log/Index")
-    public ResponseEntity<ApiResponse<UserActivityLogPageResponse>>
-    retrieveUserActivities(
-            @RequestParam(name = "pageNumber", defaultValue = "1") int pageNumber) {
-        UserActivityLogFilter filter =
-                UserActivityLogFilter.builder()
-                        .pageNumber(pageNumber)
-                        .pageSize(8)
-                        .build();
-
-        UserActivityLogPageResponse activities =
-                userActivityLogQueryService.retrieveUserActivities(filter);
-
-        return ResponseEntity.ok(ApiResponse.success(activities));
-    }
+  @GetMapping("/Index")
+  public ResponseEntity<ApiResponse<UserActivityLogPageResponse>> retrieveUserActivities(
+      @RequestParam(name = "pageNumber", defaultValue = "1") int pageNumber) {
+    UserActivityLogFilter filter =
+        UserActivityLogFilter.builder().pageNumber(pageNumber).pageSize(8).build();
+    UserActivityLogPageResponse activities =
+        userActivityLogQueryService.retrieveUserActivities(filter);
+    return ResponseEntity.ok(ApiResponse.success(activities));
+  }
 
   @GetMapping("/LogList")
-  @RequirePermission(targetPath = "Log/Index")
   public ResponseEntity<ApiResponse<UserActivityLogPageResponse>> retrieveUserActivityPage(
       @RequestParam(name = "pageNumber", defaultValue = "1") int pageNumber) {
     UserActivityLogFilter filter =
@@ -51,7 +41,6 @@ public class LogController {
   }
 
   @GetMapping("/Search")
-  @RequirePermission(targetPath = "Log/Index")
   public ResponseEntity<ApiResponse<UserActivityLogPageResponse>> searchUserActivities(
       @RequestParam(name = "TrackingNo", required = false) Long trackingNo,
       @RequestParam(name = "UserId", required = false) String userId,
@@ -81,7 +70,6 @@ public class LogController {
   }
 
   @GetMapping("/Excel")
-  @RequirePermission(targetPath = "Log/Index", value = PermissionType.REPORT_GENERATE)
   public ResponseEntity<UserActivityLogExportResponse> retrieveUserActivityExcel(
       @RequestParam(name = "TrackingNo", required = false) Long trackingNo,
       @RequestParam(name = "UserId", required = false) String userId,

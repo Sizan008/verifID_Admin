@@ -50,6 +50,7 @@ public class SecurityConfig {
                       "/",
                       "/api/Account/Login",
                       "/api/Account/Validate",
+                      "/api/Account/ValidateCentralLogin",
                       "/swagger-ui.html",
                       "/swagger-ui/**",
                       "/v3/api-docs/**",
