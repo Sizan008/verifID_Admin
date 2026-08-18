@@ -10980,3 +10980,12 @@ Caused by: oracle.jdbc.OracleDatabaseException: ORA-00904: "CPE1_0"."inet_bankin
 [18:17:09.608] [restartedMain] [DEBUG] c.l.m.v.ProviderApplication - Running with Spring Boot v3.5.4, Spring v6.2.9
 [18:17:09.609] [restartedMain] [INFO ] c.l.m.v.ProviderApplication - No active profile set, falling back to 1 default profile: "default"
 [18:17:14.370] [restartedMain] [INFO ] c.l.m.v.ProviderApplication - Started ProviderApplication in 5.006 seconds (process running for 5.453)
+[22:29:07.230] [restartedMain] [INFO ] c.l.m.v.ProviderApplication - Starting ProviderApplication using Java 21.0.11 with PID 22766 (/home/sizan/Desktop/VerifID_Admin/verifidadmin/verifidadmin-provider/target/classes started by sizan in /home/sizan/Desktop/VerifID_Admin/verifidadmin/verifidadmin-provider)
+[22:29:07.270] [restartedMain] [DEBUG] c.l.m.v.ProviderApplication - Running with Spring Boot v3.5.4, Spring v6.2.9
+[22:29:07.272] [restartedMain] [INFO ] c.l.m.v.ProviderApplication - No active profile set, falling back to 1 default profile: "default"
+[22:29:55.563] [restartedMain] [INFO ] c.l.m.v.ProviderApplication - Starting ProviderApplication using Java 21.0.11 with PID 23054 (/home/sizan/Desktop/VerifID_Admin/verifidadmin/verifidadmin-provider/target/classes started by sizan in /home/sizan/Desktop/VerifID_Admin/verifidadmin/verifidadmin-provider)
+[22:29:55.612] [restartedMain] [DEBUG] c.l.m.v.ProviderApplication - Running with Spring Boot v3.5.4, Spring v6.2.9
+[22:29:55.615] [restartedMain] [INFO ] c.l.m.v.ProviderApplication - No active profile set, falling back to 1 default profile: "default"
+[22:32:11.883] [restartedMain] [INFO ] c.l.m.v.ProviderApplication - Starting ProviderApplication using Java 21.0.11 with PID 23600 (/home/sizan/Desktop/VerifID_Admin/verifidadmin/verifidadmin-provider/target/classes started by sizan in /home/sizan/Desktop/VerifID_Admin/verifidadmin/verifidadmin-provider)
+[22:32:11.923] [restartedMain] [DEBUG] c.l.m.v.ProviderApplication - Running with Spring Boot v3.5.4, Spring v6.2.9
+[22:32:11.924] [restartedMain] [INFO ] c.l.m.v.ProviderApplication - No active profile set, falling back to 1 default profile: "default"
