@@ -4,6 +4,7 @@ import com.leads.microcube.verifidadmin.common.response.ApiResponse;
 import com.leads.microcube.verifidadmin.common.security.RequirePermission;
 import com.leads.microcube.verifidadmin.home.query.DashboardResponse;
 import com.leads.microcube.verifidadmin.home.query.SubBranchResponse;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -13,6 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/api/Home")
 @RequiredArgsConstructor
+@Tag(name="Home")
 public class HomeController {
 
   private final HomeQueryService homeQueryService;

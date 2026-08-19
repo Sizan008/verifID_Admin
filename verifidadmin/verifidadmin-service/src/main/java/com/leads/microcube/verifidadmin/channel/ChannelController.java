@@ -10,6 +10,7 @@ import com.leads.microcube.verifidadmin.common.security.PermissionType;
 import com.leads.microcube.verifidadmin.common.security.RequirePermission;
 import com.leads.microcube.verifidadmin.log.UserActivityLogService;
 import com.leads.microcube.verifidadmin.log.command.RecordCurrentUserActivity;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
 import java.util.List;
 import lombok.RequiredArgsConstructor;
@@ -25,6 +26,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/api/Channel")
 @RequiredArgsConstructor
+@Tag(name="Channel")
 public class ChannelController {
 
   private final ChannelService channelService;

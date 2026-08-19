@@ -15,6 +15,7 @@ import com.leads.microcube.verifidadmin.product.query.AvailableProductsResponse;
 import com.leads.microcube.verifidadmin.product.query.ChannelProductResponse;
 import com.leads.microcube.verifidadmin.product.query.ChannelProducts;
 import com.leads.microcube.verifidadmin.product.query.ProductResponse;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
 import java.util.List;
 import lombok.RequiredArgsConstructor;
@@ -29,6 +30,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/api/Product")
 @RequiredArgsConstructor
+@Tag(name="Product")
 public class ProductController {
 
   private final ProductService productService;

@@ -15,6 +15,8 @@ import com.leads.microcube.verifidadmin.account.query.CurrentAccountUserResponse
 import com.leads.microcube.verifidadmin.common.response.ApiResponse;
 import com.leads.microcube.verifidadmin.log.UserActivityLogService;
 import com.leads.microcube.verifidadmin.log.command.RecordCurrentUserActivity;
+import io.swagger.v3.oas.annotations.tags.Tag;
+import jakarta.persistence.Table;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.validation.Valid;
 import java.util.List;
@@ -30,6 +32,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/api/Account")
 @RequiredArgsConstructor
+@Tag(name="Account")
 public class AccountController {
 
   private final AccountService accountService;

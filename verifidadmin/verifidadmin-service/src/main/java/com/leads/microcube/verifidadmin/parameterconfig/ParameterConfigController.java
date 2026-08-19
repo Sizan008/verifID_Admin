@@ -9,6 +9,7 @@ import com.leads.microcube.verifidadmin.parameterconfig.command.CreateParameter;
 import com.leads.microcube.verifidadmin.parameterconfig.command.UpdateParameter;
 import com.leads.microcube.verifidadmin.parameterconfig.query.ParameterDetails;
 import com.leads.microcube.verifidadmin.parameterconfig.query.ParameterResponse;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
 import java.util.List;
 import lombok.RequiredArgsConstructor;
@@ -24,6 +25,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/api/ParameterConfig")
 @RequiredArgsConstructor
+@Tag(name="Parameter Config")
 public class ParameterConfigController {
 
   private final ParameterConfigService parameterConfigService;

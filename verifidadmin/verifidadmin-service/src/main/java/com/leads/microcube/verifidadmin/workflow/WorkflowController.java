@@ -10,6 +10,7 @@ import com.leads.microcube.verifidadmin.workflow.command.SwapWorkflowSequence;
 import com.leads.microcube.verifidadmin.workflow.query.WorkflowSequenceResponse;
 import com.leads.microcube.verifidadmin.workflow.query.WorkflowSequences;
 import com.leads.microcube.verifidadmin.workflow.query.WorkflowSummaryResponse;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
 import java.util.List;
 import lombok.RequiredArgsConstructor;
@@ -24,6 +25,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/api/Workflow")
 @RequiredArgsConstructor
+@Tag(name="Workflow")
 public class WorkflowController {
 
   private final WorkflowService workflowService;

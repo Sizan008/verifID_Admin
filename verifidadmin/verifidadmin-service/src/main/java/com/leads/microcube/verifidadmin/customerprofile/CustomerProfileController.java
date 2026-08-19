@@ -50,6 +50,7 @@ import com.leads.microcube.verifidadmin.customerprofile.query.RiskGradingDetails
 import com.leads.microcube.verifidadmin.customerprofile.query.RiskGradingFormResponse;
 import com.leads.microcube.verifidadmin.log.UserActivityLogService;
 import com.leads.microcube.verifidadmin.log.command.RecordCurrentUserActivity;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
 import java.time.LocalDate;
 import java.util.List;
@@ -67,6 +68,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/api/CustomerProfile")
 @RequiredArgsConstructor
+@Tag(name="Customer Profile")
 public class CustomerProfileController {
 
   private static final int PAGE_SIZE = 8;

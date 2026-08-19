@@ -5,6 +5,8 @@ import com.leads.microcube.verifidadmin.log.query.UserActivityLogExportResponse;
 import com.leads.microcube.verifidadmin.log.query.UserActivityLogFilter;
 import com.leads.microcube.verifidadmin.log.query.UserActivityLogPageResponse;
 import java.time.LocalDate;
+
+import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.http.ResponseEntity;
@@ -16,6 +18,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/api/Log")
 @RequiredArgsConstructor
+@Tag(name="Logs")
 public class LogController {
 
   private final UserActivityLogQueryService userActivityLogQueryService;
