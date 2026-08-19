@@ -2,6 +2,7 @@ package com.leads.microcube.verifidadmin.ecverification;
 
 import com.leads.microcube.verifidadmin.ecverification.command.VerifyEcNid;
 import com.leads.microcube.verifidadmin.ecverification.query.EcVerificationResponse;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
@@ -13,6 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/api/ECVerification")
 @RequiredArgsConstructor
+@Tag(name="EC Verification")
 public class EcVerificationController {
 
   private final EcVerificationService ecVerificationService;

@@ -60,6 +60,7 @@ com/leads/microcube/verifidadmin/customerprofile/CustomerProfileServiceImpl.clas
 com/leads/microcube/verifidadmin/ecverification/client/EcVerificationGateway.class
 com/leads/microcube/verifidadmin/ecverification/client/dto/EcNidVerifiedResponse.class
 com/leads/microcube/verifidadmin/customerprofile/repository/CustomerDocumentEntity.class
+com/leads/microcube/verifidadmin/error/ErrorController.class
 com/leads/microcube/verifidadmin/customerprofile/exception/CustomerProfileExceptionHandler.class
 com/leads/microcube/verifidadmin/customerprofile/repository/CrgBusinessProfessionTypeRepository.class
 com/leads/microcube/verifidadmin/apimanagement/exception/ApiManagementExceptionHandler.class
