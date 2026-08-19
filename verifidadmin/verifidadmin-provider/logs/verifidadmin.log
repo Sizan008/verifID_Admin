@@ -12,3 +12,7 @@
 [10:13:43.879] [restartedMain] [DEBUG] c.l.m.v.ProviderApplication - Running with Spring Boot v3.5.4, Spring v6.2.9
 [10:13:43.880] [restartedMain] [INFO ] c.l.m.v.ProviderApplication - No active profile set, falling back to 1 default profile: "default"
 [10:13:48.841] [restartedMain] [INFO ] c.l.m.v.ProviderApplication - Started ProviderApplication in 5.212 seconds (process running for 5.691)
+[10:29:41.671] [restartedMain] [INFO ] c.l.m.v.ProviderApplication - Starting ProviderApplication using Java 21.0.11 with PID 16093 (/home/sizan/Desktop/VerifID_Admin/verifidadmin/verifidadmin-provider/target/classes started by sizan in /home/sizan/Desktop/VerifID_Admin/verifidadmin/verifidadmin-provider)
+[10:29:41.710] [restartedMain] [DEBUG] c.l.m.v.ProviderApplication - Running with Spring Boot v3.5.4, Spring v6.2.9
+[10:29:41.711] [restartedMain] [INFO ] c.l.m.v.ProviderApplication - No active profile set, falling back to 1 default profile: "default"
+[10:29:46.470] [restartedMain] [INFO ] c.l.m.v.ProviderApplication - Started ProviderApplication in 5.006 seconds (process running for 5.465)
