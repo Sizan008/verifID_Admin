@@ -19,6 +19,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 /** Provides parameter configuration endpoints matching the legacy controller actions. */
@@ -77,6 +78,13 @@ public class ParameterConfigController {
     ParameterResponse parameter =
         parameterConfigQueryService.retrieveParameter(new ParameterDetails(id));
     return ResponseEntity.ok(ApiResponse.success(parameter));
+  }
+
+  @GetMapping(value = "/Edit", params = "id")
+  @RequirePermission(targetPath = "ParameterConfig/Index", value = PermissionType.EDIT)
+  public ResponseEntity<ApiResponse<ParameterResponse>> retrieveParameterByQuery(
+      @RequestParam("id") String id) {
+    return retrieveParameter(id);
   }
 
   @PostMapping("/Edit/{id}")
