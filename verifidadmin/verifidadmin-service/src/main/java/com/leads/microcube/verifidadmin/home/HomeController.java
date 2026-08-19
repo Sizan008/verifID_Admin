@@ -6,6 +6,8 @@ import com.leads.microcube.verifidadmin.home.query.DashboardResponse;
 import com.leads.microcube.verifidadmin.home.query.SubBranchResponse;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;
+import org.springframework.http.CacheControl;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -23,6 +25,18 @@ public class HomeController {
   @RequirePermission(targetPath = "Home/Index")
   public ResponseEntity<ApiResponse<DashboardResponse>> retrieveDashboard() {
     return ResponseEntity.ok(ApiResponse.success(homeQueryService.retrieveDashboard()));
+  }
+
+  @GetMapping("/Privacy")
+  public ResponseEntity<Void> retrievePrivacy() {
+    return ResponseEntity.ok().build();
+  }
+
+  @GetMapping("/Error")
+  public ResponseEntity<Void> retrieveError() {
+    return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
+        .cacheControl(CacheControl.noStore())
+        .build();
   }
 
   @GetMapping("/IsSubBranch")

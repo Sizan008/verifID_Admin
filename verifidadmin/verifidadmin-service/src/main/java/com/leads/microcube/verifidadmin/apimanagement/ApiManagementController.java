@@ -11,8 +11,10 @@ import com.leads.microcube.verifidadmin.log.UserActivityLogService;
 import com.leads.microcube.verifidadmin.log.command.RecordCurrentUserActivity;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
+import java.net.URI;
 import java.util.List;
 import lombok.RequiredArgsConstructor;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -27,6 +29,8 @@ import org.springframework.web.bind.annotation.RestController;
 @Tag(name="API Management")
 public class ApiManagementController {
 
+  private static final URI INDEX_URI = URI.create("/api/ApiManagement/Index");
+
   private final ApiManagementService apiManagementService;
   private final ApiManagementQueryService apiManagementQueryService;
   private final UserActivityLogService userActivityLogService;
@@ -37,6 +41,11 @@ public class ApiManagementController {
     List<ApiConnectionResponse> connections =
         apiManagementQueryService.retrieveApiConnections();
     return ResponseEntity.ok(ApiResponse.success(connections));
+  }
+
+  @GetMapping("/Details/{id}")
+  public ResponseEntity<Void> retrieveDetails(@PathVariable("id") Integer id) {
+    return legacyViewUnavailable();
   }
 
   @GetMapping("/Create")
@@ -89,5 +98,23 @@ public class ApiManagementController {
             new ApiConnectionDetails(command.getApiConnId()));
     return ResponseEntity.ok(
         ApiResponse.success("API connection updated successfully.", connection));
+  }
+
+  @GetMapping("/Delete/{id}")
+  public ResponseEntity<Void> retrieveDelete(@PathVariable("id") Integer id) {
+    return legacyViewUnavailable();
+  }
+
+  @PostMapping("/Delete/{id}")
+  public ResponseEntity<Void> deleteApiConnection(@PathVariable("id") Integer id) {
+    return redirectToIndex();
+  }
+
+  private ResponseEntity<Void> legacyViewUnavailable() {
+    return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).build();
+  }
+
+  private ResponseEntity<Void> redirectToIndex() {
+    return ResponseEntity.status(HttpStatus.FOUND).location(INDEX_URI).build();
   }
 }

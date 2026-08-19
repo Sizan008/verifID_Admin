@@ -12,8 +12,10 @@ import com.leads.microcube.verifidadmin.log.UserActivityLogService;
 import com.leads.microcube.verifidadmin.log.command.RecordCurrentUserActivity;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
+import java.net.URI;
 import java.util.List;
 import lombok.RequiredArgsConstructor;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -28,6 +30,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RequiredArgsConstructor
 @Tag(name="Channel")
 public class ChannelController {
+
+  private static final URI INDEX_URI = URI.create("/api/Channel/Index");
 
   private final ChannelService channelService;
   private final ChannelQueryService channelQueryService;
@@ -94,5 +98,15 @@ public class ChannelController {
             .requestChannel("")
             .build());
     return ResponseEntity.ok(ApiResponse.success("Channel updated successfully.", null));
+  }
+
+  @GetMapping("/Delete/{id}")
+  public ResponseEntity<Void> retrieveDelete(@PathVariable("id") Integer id) {
+    return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).build();
+  }
+
+  @PostMapping("/Delete/{id}")
+  public ResponseEntity<Void> delete(@PathVariable("id") Integer id) {
+    return ResponseEntity.status(HttpStatus.FOUND).location(INDEX_URI).build();
   }
 }
