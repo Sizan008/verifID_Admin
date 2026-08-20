@@ -35,6 +35,7 @@ com/leads/microcube/verifidadmin/account/query/AccountLoginResponse.class
 com/leads/microcube/verifidadmin/account/query/AccountLoginConfigurationResponse.class
 com/leads/microcube/verifidadmin/common/security/CurrentUserProvider.class
 com/leads/microcube/verifidadmin/customerprofile/query/CustomerPaymentResponse.class
+com/leads/microcube/verifidadmin/workflow/command/ChangeWorkflowSequence.class
 com/leads/microcube/verifidadmin/workflow/command/SwapWorkflowSequence.class
 com/leads/microcube/verifidadmin/account/command/LoginAccount.class
 com/leads/microcube/verifidadmin/workflow/query/WorkflowSummaryResponse.class
@@ -193,6 +194,7 @@ com/leads/microcube/verifidadmin/apimanagement/ApiManagementService.class
 com/leads/microcube/verifidadmin/account/command/UpdateAccountUser.class
 com/leads/microcube/verifidadmin/customerprofile/query/CustomerPageResponse$CustomerPageResponseBuilder.class
 com/leads/microcube/verifidadmin/customerprofile/query/CustomerPhotosResponse.class
+com/leads/microcube/verifidadmin/workflow/command/ChangeWorkflowSequence$ChangeWorkflowSequenceBuilder.class
 com/leads/microcube/verifidadmin/log/UserActivityLogQueryService.class
 com/leads/microcube/verifidadmin/account/AccountService.class
 com/leads/microcube/verifidadmin/customerprofile/query/CustomerDocumentResponse.class

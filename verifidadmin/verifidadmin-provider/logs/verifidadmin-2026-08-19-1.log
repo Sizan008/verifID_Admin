@@ -1,0 +1,24 @@
+[09:58:21.550] [restartedMain] [INFO ] c.l.m.v.ProviderApplication - Starting ProviderApplication using Java 21.0.11 with PID 5924 (/home/sizan/Desktop/VerifID_Admin/verifidadmin/verifidadmin-provider/target/classes started by sizan in /home/sizan/Desktop/VerifID_Admin/verifidadmin/verifidadmin-provider)
+[09:58:21.600] [restartedMain] [DEBUG] c.l.m.v.ProviderApplication - Running with Spring Boot v3.5.4, Spring v6.2.9
+[09:58:21.601] [restartedMain] [INFO ] c.l.m.v.ProviderApplication - No active profile set, falling back to 1 default profile: "default"
+[09:58:26.197] [restartedMain] [INFO ] c.l.m.v.ProviderApplication - Started ProviderApplication in 4.882 seconds (process running for 5.332)
+[09:59:38.165] [tomcat-handler-6] [DEBUG] c.l.m.v.a.c.RestSecurityApiGateway - Calling Security API operation login at http://192.168.20.218/SecurityApi3002/api/Security/DoLogin.
+[09:59:52.241] [tomcat-handler-6] [DEBUG] c.l.m.v.a.c.RestSecurityApiGateway - Security API operation login completed with response status true.
+[10:02:58.103] [restartedMain] [INFO ] c.l.m.v.ProviderApplication - Starting ProviderApplication using Java 21.0.11 with PID 8299 (/home/sizan/Desktop/VerifID_Admin/verifidadmin/verifidadmin-provider/target/classes started by sizan in /home/sizan/Desktop/VerifID_Admin/verifidadmin/verifidadmin-provider)
+[10:02:58.147] [restartedMain] [DEBUG] c.l.m.v.ProviderApplication - Running with Spring Boot v3.5.4, Spring v6.2.9
+[10:02:58.148] [restartedMain] [INFO ] c.l.m.v.ProviderApplication - No active profile set, falling back to 1 default profile: "default"
+[10:03:02.778] [restartedMain] [INFO ] c.l.m.v.ProviderApplication - Started ProviderApplication in 4.876 seconds (process running for 5.335)
+[10:13:43.841] [restartedMain] [INFO ] c.l.m.v.ProviderApplication - Starting ProviderApplication using Java 21.0.11 with PID 11130 (/home/sizan/Desktop/VerifID_Admin/verifidadmin/verifidadmin-provider/target/classes started by sizan in /home/sizan/Desktop/VerifID_Admin/verifidadmin/verifidadmin-provider)
+[10:13:43.879] [restartedMain] [DEBUG] c.l.m.v.ProviderApplication - Running with Spring Boot v3.5.4, Spring v6.2.9
+[10:13:43.880] [restartedMain] [INFO ] c.l.m.v.ProviderApplication - No active profile set, falling back to 1 default profile: "default"
+[10:13:48.841] [restartedMain] [INFO ] c.l.m.v.ProviderApplication - Started ProviderApplication in 5.212 seconds (process running for 5.691)
+[10:29:41.671] [restartedMain] [INFO ] c.l.m.v.ProviderApplication - Starting ProviderApplication using Java 21.0.11 with PID 16093 (/home/sizan/Desktop/VerifID_Admin/verifidadmin/verifidadmin-provider/target/classes started by sizan in /home/sizan/Desktop/VerifID_Admin/verifidadmin/verifidadmin-provider)
+[10:29:41.710] [restartedMain] [DEBUG] c.l.m.v.ProviderApplication - Running with Spring Boot v3.5.4, Spring v6.2.9
+[10:29:41.711] [restartedMain] [INFO ] c.l.m.v.ProviderApplication - No active profile set, falling back to 1 default profile: "default"
+[10:29:46.470] [restartedMain] [INFO ] c.l.m.v.ProviderApplication - Started ProviderApplication in 5.006 seconds (process running for 5.465)
+[12:29:39.476] [restartedMain] [INFO ] c.l.m.v.ProviderApplication - Starting ProviderApplication using Java 21.0.11 with PID 41280 (/home/sizan/Desktop/VerifID_Admin/verifidadmin/verifidadmin-provider/target/classes started by sizan in /home/sizan/Desktop/VerifID_Admin/verifidadmin/verifidadmin-provider)
+[12:29:39.538] [restartedMain] [DEBUG] c.l.m.v.ProviderApplication - Running with Spring Boot v3.5.4, Spring v6.2.9
+[12:29:39.541] [restartedMain] [INFO ] c.l.m.v.ProviderApplication - No active profile set, falling back to 1 default profile: "default"
+[12:29:45.416] [restartedMain] [INFO ] c.l.m.v.ProviderApplication - Started ProviderApplication in 6.236 seconds (process running for 6.8)
+[12:31:14.757] [tomcat-handler-5] [DEBUG] c.l.m.v.a.c.RestSecurityApiGateway - Calling Security API operation login at http://192.168.20.218/SecurityApi3002/api/Security/DoLogin.
+[12:31:22.258] [tomcat-handler-5] [DEBUG] c.l.m.v.a.c.RestSecurityApiGateway - Security API operation login completed with response status true.
