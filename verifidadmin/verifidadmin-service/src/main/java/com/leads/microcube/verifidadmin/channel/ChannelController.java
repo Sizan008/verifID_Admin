@@ -84,6 +84,13 @@ public class ChannelController {
     return ResponseEntity.ok(ApiResponse.success(channel));
   }
 
+  @GetMapping(value = "/Edit", params = "id")
+  @RequirePermission(targetPath = "Channel/Index", value = PermissionType.EDIT)
+  public ResponseEntity<ApiResponse<ChannelResponse>> retrieveChannelForEditByQuery(
+      @RequestParam("id") Integer id) {
+    return retrieveChannelForEdit(id);
+  }
+
   @PostMapping("/Edit")
   @RequirePermission(targetPath = "Channel/Index", value = PermissionType.EDIT)
   public ResponseEntity<ApiResponse<Void>> updateChannel(

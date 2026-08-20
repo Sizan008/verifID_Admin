@@ -21,6 +21,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
@@ -78,6 +79,13 @@ public class ApiManagementController {
     ApiConnectionResponse connection =
         apiManagementQueryService.retrieveApiConnection(new ApiConnectionDetails(id));
     return ResponseEntity.ok(ApiResponse.success(connection));
+  }
+
+  @GetMapping(value = "/Edit", params = "id")
+  @RequirePermission(targetPath = "ApiManagement/Index", value = PermissionType.EDIT)
+  public ResponseEntity<ApiResponse<ApiConnectionResponse>> retrieveApiConnectionByQuery(
+      @RequestParam("id") Integer id) {
+    return retrieveApiConnection(id);
   }
 
   @PostMapping("/Edit")

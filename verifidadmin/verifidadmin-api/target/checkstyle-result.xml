@@ -353,6 +353,9 @@
 <file name="/home/sizan/Desktop/VerifID_Admin/verifidadmin/verifidadmin-api/src/main/java/com/leads/microcube/verifidadmin/workflow/command/CreateWorkflow.java">
 <error line="13" column="1" severity="warning" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocTypeCheck"/>
 </file>
+<file name="/home/sizan/Desktop/VerifID_Admin/verifidadmin/verifidadmin-api/src/main/java/com/leads/microcube/verifidadmin/workflow/command/ChangeWorkflowSequence.java">
+<error line="10" column="1" severity="warning" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocTypeCheck"/>
+</file>
 <file name="/home/sizan/Desktop/VerifID_Admin/verifidadmin/verifidadmin-api/src/main/java/com/leads/microcube/verifidadmin/workflow/command/SwapWorkflowSequence.java">
 <error line="12" column="1" severity="warning" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocTypeCheck"/>
 </file>

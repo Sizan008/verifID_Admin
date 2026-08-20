@@ -126,6 +126,7 @@
 /home/sizan/Desktop/VerifID_Admin/verifidadmin/verifidadmin-api/src/main/java/com/leads/microcube/verifidadmin/report/query/MergedCustomerPhotoResponse.java
 /home/sizan/Desktop/VerifID_Admin/verifidadmin/verifidadmin-api/src/main/java/com/leads/microcube/verifidadmin/workflow/WorkflowQueryService.java
 /home/sizan/Desktop/VerifID_Admin/verifidadmin/verifidadmin-api/src/main/java/com/leads/microcube/verifidadmin/workflow/WorkflowService.java
+/home/sizan/Desktop/VerifID_Admin/verifidadmin/verifidadmin-api/src/main/java/com/leads/microcube/verifidadmin/workflow/command/ChangeWorkflowSequence.java
 /home/sizan/Desktop/VerifID_Admin/verifidadmin/verifidadmin-api/src/main/java/com/leads/microcube/verifidadmin/workflow/command/CreateWorkflow.java
 /home/sizan/Desktop/VerifID_Admin/verifidadmin/verifidadmin-api/src/main/java/com/leads/microcube/verifidadmin/workflow/command/SwapWorkflowSequence.java
 /home/sizan/Desktop/VerifID_Admin/verifidadmin/verifidadmin-api/src/main/java/com/leads/microcube/verifidadmin/workflow/query/WorkflowSequenceResponse.java
