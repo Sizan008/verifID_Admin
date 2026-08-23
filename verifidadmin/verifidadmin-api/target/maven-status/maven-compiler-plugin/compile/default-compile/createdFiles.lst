@@ -123,12 +123,14 @@ com/leads/microcube/verifidadmin/customerprofile/query/CustomerNominee.class
 com/leads/microcube/verifidadmin/customerprofile/query/CustomerActionResponse.class
 com/leads/microcube/verifidadmin/channel/query/ChannelResponse.class
 com/leads/microcube/verifidadmin/common/response/ApiResponse.class
+com/leads/microcube/verifidadmin/ecverification/query/EcAddressOptionResponse.class
 com/leads/microcube/verifidadmin/customerprofile/query/CustomerFilter.class
 com/leads/microcube/verifidadmin/apimanagement/command/CreateApiConnection.class
 com/leads/microcube/verifidadmin/customerprofile/query/CustomerEddDetails.class
 com/leads/microcube/verifidadmin/customerprofile/query/CustomerRiskScoreResponse.class
 com/leads/microcube/verifidadmin/customerprofile/query/RiskGradingFormResponse$RiskGradingFormResponseBuilder.class
 com/leads/microcube/verifidadmin/common/security/FunctionAccess$FunctionAccessBuilder.class
+com/leads/microcube/verifidadmin/ecverification/query/EcAddressOptionResponse$EcAddressOptionResponseBuilder.class
 com/leads/microcube/verifidadmin/customerprofile/query/CustomerDashboardMetrics.class
 com/leads/microcube/verifidadmin/channel/command/UpdateChannel$UpdateChannelBuilder.class
 com/leads/microcube/verifidadmin/customerprofile/query/CustomerReport.class
@@ -187,6 +189,7 @@ com/leads/microcube/verifidadmin/customerprofile/query/CustomerExport.class
 com/leads/microcube/verifidadmin/account/command/DeclineAccountUser.class
 com/leads/microcube/verifidadmin/log/query/UserActivityLogFilter$UserActivityLogFilterBuilder.class
 com/leads/microcube/verifidadmin/customerprofile/query/CustomerPageResponse.class
+com/leads/microcube/verifidadmin/ecverification/EcVerificationQueryService.class
 com/leads/microcube/verifidadmin/channel/command/CreateChannel$CreateChannelBuilder.class
 com/leads/microcube/verifidadmin/customerprofile/query/EddAnswerResponse$EddAnswerResponseBuilder.class
 com/leads/microcube/verifidadmin/parameterconfig/command/CreateParameter$CreateParameterBuilder.class

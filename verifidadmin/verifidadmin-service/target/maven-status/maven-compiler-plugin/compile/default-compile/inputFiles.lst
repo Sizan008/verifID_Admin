@@ -119,8 +119,10 @@
 /home/sizan/Desktop/VerifID_Admin/verifidadmin/verifidadmin-service/src/main/java/com/leads/microcube/verifidadmin/customerprofile/repository/CustomerTimeAccountRepository.java
 /home/sizan/Desktop/VerifID_Admin/verifidadmin/verifidadmin-service/src/main/java/com/leads/microcube/verifidadmin/customerprofile/repository/NomineeGuardianEntity.java
 /home/sizan/Desktop/VerifID_Admin/verifidadmin/verifidadmin-service/src/main/java/com/leads/microcube/verifidadmin/customerprofile/repository/NomineeGuardianId.java
+/home/sizan/Desktop/VerifID_Admin/verifidadmin/verifidadmin-service/src/main/java/com/leads/microcube/verifidadmin/customerprofile/repository/NomineeGuardianProjection.java
 /home/sizan/Desktop/VerifID_Admin/verifidadmin/verifidadmin-service/src/main/java/com/leads/microcube/verifidadmin/customerprofile/repository/NomineeGuardianRepository.java
 /home/sizan/Desktop/VerifID_Admin/verifidadmin/verifidadmin-service/src/main/java/com/leads/microcube/verifidadmin/ecverification/EcVerificationController.java
+/home/sizan/Desktop/VerifID_Admin/verifidadmin/verifidadmin-service/src/main/java/com/leads/microcube/verifidadmin/ecverification/EcVerificationQueryServiceImpl.java
 /home/sizan/Desktop/VerifID_Admin/verifidadmin/verifidadmin-service/src/main/java/com/leads/microcube/verifidadmin/ecverification/EcVerificationServiceImpl.java
 /home/sizan/Desktop/VerifID_Admin/verifidadmin/verifidadmin-service/src/main/java/com/leads/microcube/verifidadmin/ecverification/EcVerificationSettings.java
 /home/sizan/Desktop/VerifID_Admin/verifidadmin/verifidadmin-service/src/main/java/com/leads/microcube/verifidadmin/ecverification/client/EcVerificationGateway.java
@@ -136,6 +138,7 @@
 /home/sizan/Desktop/VerifID_Admin/verifidadmin/verifidadmin-service/src/main/java/com/leads/microcube/verifidadmin/ecverification/client/dto/EcVerifySuccessData.java
 /home/sizan/Desktop/VerifID_Admin/verifidadmin/verifidadmin-service/src/main/java/com/leads/microcube/verifidadmin/ecverification/exception/EcVerificationException.java
 /home/sizan/Desktop/VerifID_Admin/verifidadmin/verifidadmin-service/src/main/java/com/leads/microcube/verifidadmin/ecverification/exception/EcVerificationExceptionHandler.java
+/home/sizan/Desktop/VerifID_Admin/verifidadmin/verifidadmin-service/src/main/java/com/leads/microcube/verifidadmin/ecverification/repository/EcAddressLookupRepository.java
 /home/sizan/Desktop/VerifID_Admin/verifidadmin/verifidadmin-service/src/main/java/com/leads/microcube/verifidadmin/error/ErrorController.java
 /home/sizan/Desktop/VerifID_Admin/verifidadmin/verifidadmin-service/src/main/java/com/leads/microcube/verifidadmin/home/HomeController.java
 /home/sizan/Desktop/VerifID_Admin/verifidadmin/verifidadmin-service/src/main/java/com/leads/microcube/verifidadmin/home/HomeQueryServiceImpl.java

@@ -11,6 +11,7 @@ import com.leads.microcube.verifidadmin.workflow.repository.WorkflowSequenceRepo
 import com.leads.microcube.verifidadmin.workflow.repository.WorkflowStepEntity;
 import com.leads.microcube.verifidadmin.workflow.repository.WorkflowStepRepository;
 import java.time.LocalDateTime;
+import java.util.ArrayList;
 import java.util.List;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -31,13 +32,13 @@ public class WorkflowServiceImpl implements WorkflowService {
   private final WorkflowStepRepository workflowStepRepository;
 
   @Override
-  public void process(CreateWorkflow command) {
+  public synchronized void process(CreateWorkflow command) {
     if (command == null) {
       throw new WorkflowValidationException("Failed to create new workflow.");
     }
 
     try {
-      Integer workflowId = Math.toIntExact(workflowRepository.count()) + 1;
+      Integer workflowId = workflowRepository.retrieveMaxWorkflowId() + 1;
       LocalDateTime currentTime = LocalDateTime.now();
       WorkflowEntity workflow =
           WorkflowEntity.builder()
@@ -52,8 +53,8 @@ public class WorkflowServiceImpl implements WorkflowService {
               .authDt(currentTime)
               .authStatus(AUTHORIZED_STATUS)
               .build();
-      workflowRepository.save(workflow);
-      assignSteps(workflowId, currentTime);
+      WorkflowEntity savedWorkflow = workflowRepository.saveAndFlush(workflow);
+      assignSteps(savedWorkflow.getWorkflowId(), currentTime);
     } catch (WorkflowValidationException exception) {
       throw exception;
     } catch (Exception exception) {
@@ -98,10 +99,15 @@ public class WorkflowServiceImpl implements WorkflowService {
 
   private void assignSteps(Integer workflowId, LocalDateTime currentTime) {
     List<WorkflowStepEntity> steps = workflowStepRepository.findAllByOrderByStepIdAsc();
+    Integer firstWorkflowSequenceId =
+        workflowSequenceRepository.retrieveMaxWorkflowSequenceId() + 1;
+    List<WorkflowSequenceEntity> sequences = new ArrayList<>(steps.size());
+
     for (int index = 0; index < steps.size(); index++) {
       WorkflowStepEntity step = steps.get(index);
       WorkflowSequenceEntity sequence =
           WorkflowSequenceEntity.builder()
+              .workflowSequenceId(firstWorkflowSequenceId + index)
               .workflowId(workflowId)
               .stepSequenceNumber(index + 1)
               .stepId(step.getStepId())
@@ -109,8 +115,11 @@ public class WorkflowServiceImpl implements WorkflowService {
               .makeDt(currentTime)
               .authStatus(AUTHORIZED_STATUS)
               .build();
-      workflowSequenceRepository.save(sequence);
+      sequences.add(sequence);
     }
+
+    workflowSequenceRepository.saveAll(sequences);
+    workflowSequenceRepository.flush();
   }
 
   private void validate(SwapWorkflowSequence command) {

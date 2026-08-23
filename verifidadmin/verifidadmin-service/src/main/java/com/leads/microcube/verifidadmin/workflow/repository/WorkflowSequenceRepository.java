@@ -16,6 +16,9 @@ public interface WorkflowSequenceRepository
   List<WorkflowSequenceEntity> findAllByWorkflowIdOrderByStepSequenceNumberAsc(
       Integer workflowId);
 
+  @Query(value = "SELECT NVL(MAX(WF_SEQ_ID), 0) FROM PARAM_WF_SEQUENCES", nativeQuery = true)
+  Integer retrieveMaxWorkflowSequenceId();
+
   @Lock(LockModeType.PESSIMISTIC_WRITE)
   @Query(
       """

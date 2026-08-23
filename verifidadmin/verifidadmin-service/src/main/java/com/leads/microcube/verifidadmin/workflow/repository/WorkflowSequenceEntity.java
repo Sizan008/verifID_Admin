@@ -2,8 +2,6 @@ package com.leads.microcube.verifidadmin.workflow.repository;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 import java.time.LocalDateTime;
@@ -24,7 +22,6 @@ import lombok.Setter;
 public class WorkflowSequenceEntity {
 
   @Id
-  @GeneratedValue(strategy = GenerationType.IDENTITY)
   @Column(name = "WF_SEQ_ID", nullable = false, precision = 10)
   private Integer workflowSequenceId;
 

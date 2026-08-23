@@ -86,7 +86,7 @@ import com.leads.microcube.verifidadmin.customerprofile.repository.CustomerSslCo
 import com.leads.microcube.verifidadmin.customerprofile.repository.CustomerSslCommerzPaymentRepository;
 import com.leads.microcube.verifidadmin.customerprofile.repository.CustomerTimeAccountEntity;
 import com.leads.microcube.verifidadmin.customerprofile.repository.CustomerTimeAccountRepository;
-import com.leads.microcube.verifidadmin.customerprofile.repository.NomineeGuardianEntity;
+import com.leads.microcube.verifidadmin.customerprofile.repository.NomineeGuardianProjection;
 import com.leads.microcube.verifidadmin.customerprofile.repository.NomineeGuardianRepository;
 import com.leads.microcube.verifidadmin.log.query.UserActivityLogResponse;
 import com.leads.microcube.verifidadmin.log.repository.UserActivityLogEntity;
@@ -259,7 +259,8 @@ public class CustomerProfileQueryServiceImpl implements CustomerProfileQueryServ
     String authType = resolveAuthType(request.getAuthType());
     CurrentUser currentUser = currentUserProvider.getCurrentUser();
     String branchId = resolveBranch(request, currentUser);
-    boolean headOffice = sameText(branchId, retrieveSetting(HEAD_OFFICE_BRANCH_ID));
+    boolean headOffice = sameText(
+        currentUser.getHomeBranchId(), retrieveSetting(HEAD_OFFICE_BRANCH_ID));
     int pageNumber = Math.max(request.getPageNumber(), 1);
     int pageSize = request.getPageSize() <= 0 ? DEFAULT_PAGE_SIZE : request.getPageSize();
 
@@ -359,8 +360,9 @@ public class CustomerProfileQueryServiceImpl implements CustomerProfileQueryServ
     Long trackingNo = requireTrackingNo(query == null ? null : query.getTrackingNo());
     Integer nomineeNo =
         requirePositive(query == null ? null : query.getNomineeNo(), "nominee number");
-    Optional<NomineeGuardianEntity> entity =
-        nomineeGuardianRepository.findFirstByTrackingNoAndNomineeNo(trackingNo, nomineeNo);
+    Optional<NomineeGuardianProjection> entity =
+        nomineeGuardianRepository.findFirstProjectionByTrackingNoAndNomineeNo(
+            trackingNo, nomineeNo);
     if (entity.isEmpty()) {
       return emptyGuardianResponse();
     }
@@ -674,8 +676,7 @@ public class CustomerProfileQueryServiceImpl implements CustomerProfileQueryServ
         .map(BranchOfficeEntity::getBranchName)
         .orElse("");
     String rmCode = additionalInfoRepository
-        .findFirstByTrackingNoAndPropertyName(profile.getTrackingNo(), "RMCode")
-        .map(entity -> entity.getPropertyAnswer())
+        .findFirstPropertyAnswerByTrackingNoAndPropertyName(profile.getTrackingNo(), "RMCode")
         .orElse("");
     String sdnScoreSetting = retrieveSetting(SDN_SCORE);
     String sanctionScreening = "";
@@ -765,7 +766,7 @@ public class CustomerProfileQueryServiceImpl implements CustomerProfileQueryServ
         .bankShortName(settings.getBankShortName())
         .guardianList(
             nomineeGuardianRepository
-                .findAllByTrackingNoOrderByNomineeNoAscGuardianNoAsc(profile.getTrackingNo())
+                .findAllProjectionsByTrackingNo(profile.getTrackingNo())
                 .stream()
                 .map(mapper::toGuardian)
                 .toList())
@@ -786,7 +787,8 @@ public class CustomerProfileQueryServiceImpl implements CustomerProfileQueryServ
         predicates.add(
             cb.or(cb.isNull(root.get("referenceNo")), cb.equal(root.get("referenceNo"), 0L)));
       }
-      if (!headOffice && StringUtils.hasText(branchId)) {
+      boolean explicitBranchFilter = hasExplicitBranchFilter(request);
+      if (StringUtils.hasText(branchId) && (!headOffice || explicitBranchFilter)) {
         predicates.add(cb.equal(root.get("branchId"), branchId));
       }
       if (!request.isLogMode() && StringUtils.hasText(currentUser.getUserId())) {
@@ -859,7 +861,8 @@ public class CustomerProfileQueryServiceImpl implements CustomerProfileQueryServ
   private List<CustomerListItem> retrieveAllCustomers(CustomerFilter filter) {
     CurrentUser currentUser = currentUserProvider.getCurrentUser();
     String branchId = resolveBranch(filter, currentUser);
-    boolean headOffice = sameText(branchId, retrieveSetting(HEAD_OFFICE_BRANCH_ID));
+    boolean headOffice = sameText(
+        currentUser.getHomeBranchId(), retrieveSetting(HEAD_OFFICE_BRANCH_ID));
     Specification<CustomerProfileEntity> specification = buildCustomerSpecification(
         filter, resolveAuthType(filter.getAuthType()), branchId, headOffice, currentUser);
     List<CustomerListItem> result = customerProfileRepository.findAll(
@@ -1398,6 +1401,11 @@ public class CustomerProfileQueryServiceImpl implements CustomerProfileQueryServ
     } catch (NumberFormatException exception) {
       return input;
     }
+  }
+
+  private boolean hasExplicitBranchFilter(CustomerFilter request) {
+    return StringUtils.hasText(request.getSelectedBranchId())
+        || StringUtils.hasText(request.getBranchId());
   }
 
   private String resolveBranch(CustomerFilter request, CurrentUser currentUser) {

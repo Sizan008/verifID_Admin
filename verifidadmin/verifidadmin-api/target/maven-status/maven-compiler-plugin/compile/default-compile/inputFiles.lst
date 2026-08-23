@@ -88,9 +88,11 @@
 /home/sizan/Desktop/VerifID_Admin/verifidadmin/verifidadmin-api/src/main/java/com/leads/microcube/verifidadmin/customerprofile/query/RiskGradingFormResponse.java
 /home/sizan/Desktop/VerifID_Admin/verifidadmin/verifidadmin-api/src/main/java/com/leads/microcube/verifidadmin/customerprofile/query/RiskGradingResponse.java
 /home/sizan/Desktop/VerifID_Admin/verifidadmin/verifidadmin-api/src/main/java/com/leads/microcube/verifidadmin/customerprofile/query/RiskOption.java
+/home/sizan/Desktop/VerifID_Admin/verifidadmin/verifidadmin-api/src/main/java/com/leads/microcube/verifidadmin/ecverification/EcVerificationQueryService.java
 /home/sizan/Desktop/VerifID_Admin/verifidadmin/verifidadmin-api/src/main/java/com/leads/microcube/verifidadmin/ecverification/EcVerificationService.java
 /home/sizan/Desktop/VerifID_Admin/verifidadmin/verifidadmin-api/src/main/java/com/leads/microcube/verifidadmin/ecverification/command/EcVerificationAddress.java
 /home/sizan/Desktop/VerifID_Admin/verifidadmin/verifidadmin-api/src/main/java/com/leads/microcube/verifidadmin/ecverification/command/VerifyEcNid.java
+/home/sizan/Desktop/VerifID_Admin/verifidadmin/verifidadmin-api/src/main/java/com/leads/microcube/verifidadmin/ecverification/query/EcAddressOptionResponse.java
 /home/sizan/Desktop/VerifID_Admin/verifidadmin/verifidadmin-api/src/main/java/com/leads/microcube/verifidadmin/ecverification/query/EcVerificationResponse.java
 /home/sizan/Desktop/VerifID_Admin/verifidadmin/verifidadmin-api/src/main/java/com/leads/microcube/verifidadmin/ecverification/query/FieldVerificationResponse.java
 /home/sizan/Desktop/VerifID_Admin/verifidadmin/verifidadmin-api/src/main/java/com/leads/microcube/verifidadmin/home/HomeQueryService.java
