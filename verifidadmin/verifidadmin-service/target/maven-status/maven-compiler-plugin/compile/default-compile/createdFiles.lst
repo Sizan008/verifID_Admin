@@ -6,6 +6,7 @@ com/leads/microcube/verifidadmin/ecverification/client/dto/EcFieldVerificationRe
 com/leads/microcube/verifidadmin/log/repository/UserActivityLogEntity$UserActivityLogEntityBuilder.class
 com/leads/microcube/verifidadmin/customerprofile/repository/CustomerTimeAccountRepository.class
 com/leads/microcube/verifidadmin/customerprofile/repository/CrgValueEntity$CrgValueEntityBuilder.class
+com/leads/microcube/verifidadmin/ecverification/repository/EcAddressLookupRepository.class
 com/leads/microcube/verifidadmin/common/exception/GlobalExceptionHandler.class
 com/leads/microcube/verifidadmin/channel/exception/ChannelExceptionHandler.class
 com/leads/microcube/verifidadmin/account/AccountServiceImpl.class
@@ -94,10 +95,12 @@ com/leads/microcube/verifidadmin/customerprofile/repository/CrgResidentTypeEntit
 com/leads/microcube/verifidadmin/customerprofile/client/CustomerProfileReportGateway.class
 com/leads/microcube/verifidadmin/log/LogController.class
 com/leads/microcube/verifidadmin/customerprofile/repository/CrgOnboardingTypeRepository.class
+com/leads/microcube/verifidadmin/ecverification/EcVerificationQueryServiceImpl.class
 com/leads/microcube/verifidadmin/account/AccountMapper.class
 com/leads/microcube/verifidadmin/log/repository/UserActivityLogEntity.class
 com/leads/microcube/verifidadmin/home/HomeController.class
 com/leads/microcube/verifidadmin/customerprofile/repository/CrgEddRepository.class
+com/leads/microcube/verifidadmin/customerprofile/repository/NomineeGuardianProjection.class
 com/leads/microcube/verifidadmin/apimanagement/repository/ApiConnectionEntity$ApiConnectionEntityBuilder.class
 com/leads/microcube/verifidadmin/parameterconfig/exception/ParameterConfigExceptionHandler.class
 com/leads/microcube/verifidadmin/customerprofile/exception/CustomerProfileNotFoundException.class

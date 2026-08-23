@@ -9,7 +9,7 @@ import com.leads.microcube.verifidadmin.customerprofile.repository.CustomerBenef
 import com.leads.microcube.verifidadmin.customerprofile.repository.CustomerNomineeEntity;
 import com.leads.microcube.verifidadmin.customerprofile.repository.CustomerProfileEntity;
 import com.leads.microcube.verifidadmin.customerprofile.repository.CustomerSslCommerzPaymentEntity;
-import com.leads.microcube.verifidadmin.customerprofile.repository.NomineeGuardianEntity;
+import com.leads.microcube.verifidadmin.customerprofile.repository.NomineeGuardianProjection;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
@@ -87,7 +87,7 @@ public class CustomerProfileMapper {
         .build();
   }
 
-  public CustomerGuardianResponse toGuardian(NomineeGuardianEntity entity) {
+  public CustomerGuardianResponse toGuardian(NomineeGuardianProjection entity) {
     return CustomerGuardianResponse.builder()
         .trackingNo(entity.getTrackingNo())
         .guardianNo(entity.getGuardianNo())
